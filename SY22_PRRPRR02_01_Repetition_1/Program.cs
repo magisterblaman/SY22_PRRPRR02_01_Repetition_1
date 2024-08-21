@@ -12,7 +12,13 @@ namespace SY22_PRRPRR02_01_Repetition_1 {
 
 			int age = int.Parse(ageInput);
 
-			Console.WriteLine("Om 5 år är du " + (age + 5) + " år");
+			if (age >= 20) {
+				Console.WriteLine("Välkommen in");
+			} else if (age < 12) {
+				Console.WriteLine("Välkommen in i målsmans sällskap");
+			} else {
+				Console.WriteLine("Hejdå");
+			}
 		}
 	}
 }
