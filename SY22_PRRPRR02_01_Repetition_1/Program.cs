@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 namespace SY22_PRRPRR02_01_Repetition_1 {
 	internal class Program {
 		static void Main(string[] args) {
-			int x = 3829;
-			int y = 32;
+			Console.WriteLine("Hur gammal är du?");
+			string ageInput = Console.ReadLine();
 
-			double z = 32.43;
+			int age = int.Parse(ageInput);
 
-			int sum = (int)(y + z);
-
-			Console.WriteLine(x % y);
+			Console.WriteLine("Om 5 år är du " + (age + 5) + " år");
 		}
 	}
 }
