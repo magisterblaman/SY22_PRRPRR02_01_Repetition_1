@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 namespace SY22_PRRPRR02_01_Repetition_1 {
 	internal class Program {
 		static void Main(string[] args) {
-			Console.WriteLine("Hello world!");
+			Console.WriteLine("Skriv ditt personnummer:");
+			string personnummer = Console.ReadLine();
 
-			string namnetPåVariabeln = "Det här är en string";
-			Console.WriteLine(namnetPåVariabeln);
-
-			namnetPåVariabeln = "Jag är jättecool 123";
-			Console.WriteLine(namnetPåVariabeln);
-
-			string förnamn = "Hannes";
-			string efternamn = "Blåman";
-
-			string helaNamnet = förnamn + " " + efternamn;
-			Console.WriteLine(helaNamnet);
+			if (personnummer == "188603240000") {
+				Console.WriteLine("Du är världens äldsta person, grattis");
+			} else {
+				Console.WriteLine("Synd");
+			}
 		}
 	}
 }
